@@ -1,0 +1,8 @@
+{
+  "name": "pessoashttp",
+  "app_id": "9fef4a08",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
