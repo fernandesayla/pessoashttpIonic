@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { PessoasProvider } from  '../../providers/pessoas/pessoas'
+
+import { DetalhesPage } from '../detalhes/detalhes'
+
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -19,4 +23,11 @@ export class HomePage {
       this.pessoas = data;
     })
   }
+
+  verDetalhes(pessoa: any): void{
+    this.navCtrl.push(DetalhesPage, {pessoa: pessoa})
+
+  }
+
+
 }

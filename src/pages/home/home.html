@@ -8,10 +8,13 @@
 
 
 <ion-content padding>
-  <ion-item *ngFor="let pessoa of pessoas">
+  <ion-item *ngFor="let pessoa of pessoas" (click)="verDetalhes(pessoa)" >
+    <ion-avatar item-start>
+    <img src={{pessoa.picture.thumbnail}}>
+  </ion-avatar>
 
     <h2>{{pessoa.name.first}}</h2>
-    <p>{{pessoa.name.first}}</p>
+    <p>{{pessoa.email}}</p>
 
   </ion-item>
 

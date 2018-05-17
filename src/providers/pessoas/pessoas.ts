@@ -14,7 +14,7 @@ export class PessoasProvider {
   public apiURL: string = "https://randomuser.me/api/?results=10&nat=br&seed=abc"
 
   constructor(public http: HttpClient) {
-    console.log('Hello PessoasProvider Provider')
+ 
 
   }
 
